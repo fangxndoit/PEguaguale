@@ -1,0 +1,539 @@
+$vm_base: 750;
+@function h($px) {
+    @return ($px / 750) * 100vh;
+}
+
+@function vm($px) {
+    @return ($px / 750) * 100vw;
+}
+
+$vm_fontsize: 75; // iPhone 6尺寸的根元素大小基准值
+@function r($px) {
+    @return ($px / $vm_fontsize) * 1rem;
+}
+
+@media screen and (orientation: portrait) {
+    html {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+    }
+    body {
+        width: 100%;
+        height: 100%;
+    }
+    #print {
+        position: absolute;
+        background: url(../img/background.png) no-repeat;
+        background-size: cover;
+        #title_icon {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+        #guess_bass {
+            position: absolute;
+            top: vm(40);
+            left: vm(384);
+            img {
+                height: vm(220);
+            }
+        }
+        #guess_outcome {
+            position: absolute;
+            top: vm(413);
+            left: vm(362);
+            img {
+                height: vm(236);
+            }
+        }
+        #scraped1 {
+            position: absolute;
+            left: vm(705);
+            top: vm(90);
+            width: vm(24);
+            height: vm(103);
+        }
+        #scraped2 {
+            position: absolute;
+            left: vm(580);
+            top: vm(338);
+            width: vm(24);
+            height: vm(103);
+        }
+        #your_ball {
+            position: absolute;
+            width: vm(31);
+            height: vm(128);
+            left: vm(645);
+            bottom: vm(68);
+        }
+        #my_ball {
+            position: absolute;
+            left: vm(645);
+            bottom: vm(257);
+            width: vm(31);
+            height: vm(128);
+        }
+        #ending {
+            position: absolute;
+            top: vm(90);
+            width: vm(24);
+            height: vm(130);
+            right: vm(306);
+        }
+        #my_score {
+            position: absolute;
+            top: vm(90);
+            left: vm(940);
+            width: vm(24);
+            height: vm(130);
+        }
+        #scraped_area {
+            width: vm(616);
+            height: vm(416);
+            position: absolute;
+            right: vm(17);
+            bottom: vm(45);
+        }
+        #ball {
+            #one {
+                width: vm(145);
+                height: vm(173);
+                position: absolute;
+                right: vm(482);
+                bottom: vm(231);
+            }
+            #two {
+                width: vm(145);
+                height: vm(173);
+                position: absolute;
+                right: vm(328);
+                bottom: vm(231);
+            }
+            #three {
+                width: vm(145);
+                height: vm(173);
+                position: absolute;
+                right: vm(173);
+                bottom: vm(231);
+            }
+            #four {
+                width: vm(145);
+                height: vm(173);
+                position: absolute;
+                right: vm(23);
+                bottom: vm(231);
+            }
+            #five {
+                width: vm(145);
+                height: vm(173);
+                position: absolute;
+                right: vm(482);
+                bottom: vm(50);
+            }
+            #six {
+                width: vm(145);
+                height: vm(173);
+                position: absolute;
+                right: vm(328);
+                bottom: vm(50);
+            }
+            #seven {
+                width: vm(145);
+                height: vm(173);
+                position: absolute;
+                right: vm(173);
+                bottom: vm(50);
+            }
+            #eight {
+                width: vm(145);
+                height: vm(173);
+                position: absolute;
+                right: vm(23);
+                bottom: vm(50);
+            }
+            #nine {
+                width: vm((156));
+                height: vm(154);
+                right: vm(410);
+                position: absolute;
+                top: vm(82);
+            }
+            #ten {
+                width: vm((263));
+                height: vm(152);
+                right: vm(17);
+                position: absolute;
+                top: vm(82);
+            }
+        }
+    }
+    #account {
+        transform: rotate(90deg);
+        position: absolute;
+        width: vm(280);
+        height: vm(82);
+        top: vm(127);
+        left: vm(530);
+        background: url(../img/account.png) no-repeat;
+        span {
+            font-size: vm(23);
+            color: #FFFFFF;
+            display: inline-block;
+            height: vm(82);
+            line-height: vm(82);
+            width: vm(250);
+            text-align: end;
+        }
+    }
+    #win {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: url(../img/win.png) no-repeat;
+        background-size: cover;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .canvasclass {
+        position: absolute;
+        width: vm(140);
+        height: vm(170);
+    }
+    .nineclass {
+        position: absolute;
+        width: vm(156);
+        height: vm(157);
+    }
+    .tenclass {
+        position: absolute;
+        width: vm(262);
+        height: vm(150);
+    }
+}
+
+@media screen and (orientation: landscape) {
+    html {
+        width: 100%;
+        height: 100%;
+        background-color: white;
+    }
+    body {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+    }
+    #print {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../img/background.png) no-repeat;
+        background-size: cover;
+        #title_icon {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+        #guess_bass {
+            position: absolute;
+            top: h(40);
+            left: h(384);
+            img {
+                height: h(220);
+            }
+        }
+        #guess_outcome {
+            position: absolute;
+            top: h(327);
+            left: h(362);
+            img {
+                height: h(236);
+            }
+        }
+        #scraped1 {
+            position: absolute;
+            left: h(705);
+            top: h(90);
+            width: h(24);
+            height: h(103);
+        }
+        #scraped2 {
+            position: absolute;
+            left: h(580);
+            top: h(276);
+            width: h(24);
+            height: h(103);
+        }
+        #your_ball {
+            position: absolute;
+            width: h(31);
+            height: h(128);
+            left: h(645);
+            bottom: h(68);
+        }
+        #my_ball {
+            position: absolute;
+            left: h(645);
+            bottom: h(257);
+            width: h(31);
+            height: h(128);
+        }
+        #ending {
+            position: absolute;
+            top: h(90);
+            width: h(24);
+            height: h(130);
+            right: h(306);
+        }
+        #my_score {
+            position: absolute;
+            top: h(90);
+            left: h(940);
+            width: h(24);
+            height: h(130);
+        }
+        #scraped_area {
+            width: h(616);
+            height: h(416);
+            position: absolute;
+            right: h(17);
+            bottom: h(45);
+        }
+        #ball {
+            #one {
+                width: h(140);
+                height: h(173);
+                position: absolute;
+                right: h(482);
+                bottom: h(231);
+            }
+            #two {
+                width: h(145);
+                height: h(173);
+                position: absolute;
+                right: h(325);
+                bottom: h(231);
+            }
+            #three {
+                width: h(145);
+                height: h(173);
+                position: absolute;
+                right: h(173);
+                bottom: h(231);
+            }
+            #four {
+                width: h(145);
+                height: h(173);
+                position: absolute;
+                right: h(21);
+                bottom: h(231);
+            }
+            #five {
+                width: h(145);
+                height: h(173);
+                position: absolute;
+                right: h(478);
+                bottom: h(50);
+            }
+            #six {
+                width: h(145);
+                height: h(173);
+                position: absolute;
+                right: h(326);
+                bottom: h(50);
+            }
+            #seven {
+                width: h(145);
+                height: h(173);
+                position: absolute;
+                right: h(173);
+                bottom: h(50);
+            }
+            #eight {
+                width: h(145);
+                height: h(173);
+                position: absolute;
+                right: h(21);
+                bottom: h(50);
+            }
+            #nine {
+                width: h((156));
+                height: h(154);
+                right: h(410);
+                position: absolute;
+                top: h(82);
+            }
+            #ten {
+                width: h((263));
+                height: h(152);
+                right: h(17);
+                position: absolute;
+                top: h(82);
+            }
+        }
+    }
+    #account {
+        position: relative;
+        width: h(280);
+        height: h(82);
+        top: h(10);
+        left: h(10);
+        background: url(../img/account.png) no-repeat;
+        span {
+            font-size: h(23);
+            color: #FFFFFF;
+            display: inline-block;
+            height: h(82);
+            line-height: h(82);
+            width: h(250);
+            text-align: end;
+        }
+    }
+    #win {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: url(../img/win.png) no-repeat;
+        background-size: cover;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        #num {
+            width: h(520);
+            height: h(105);
+            position: absolute;
+            top: h(360);
+            left: h(395);
+            span {
+                display: inline-block;
+                height: h(105);
+                font-size: h(88);
+                color: #FFFFFF;
+                line-height: h(105);
+                font-weight: bold;
+            }
+            span:nth-child(1) {
+                width: 45%;
+                text-align: end;
+            }
+            span:nth-child(2) {
+                width: 49%;
+                margin-left: h(20);
+            }
+        }
+    }
+    .canvasclass {
+        position: absolute;
+        width: h(140);
+        height: h(170);
+    }
+    .maskclass {
+        position: absolute;
+        width: h(140);
+        height: h(170);
+    }
+    .nineclass {
+        position: absolute;
+        width: h(156);
+        height: h(157);
+    }
+    .tenclass {
+        position: absolute;
+        width: h(262);
+        height: h(150);
+    }
+    #btn1 {
+        
+        width: h(148);
+        height: h(150);
+        position: absolute;
+        bottom: h(13);
+        left: h(150);
+        img {
+            width: h(141);
+            height: h(144);
+        }
+    }
+    #btn2 {
+        display: none;
+        width: h(148);
+        height: h(150);
+        position: absolute;
+        bottom: h(13);
+        left: h(300);
+        img {
+            width: h(141);
+            height: h(144);
+        }
+    }
+    #btn3 {
+        width: h(148);
+        height: h(150);
+        position: absolute;
+        bottom: h(13);
+        left: h(300);
+        img {
+            width: h(141);
+            height: h(144);
+        }
+    }
+    #luckynum{
+        position: absolute;
+        top: h(453);
+        left: h(216);
+        width: h(166);
+        height: h(48);
+        border: 1px solid #f0d800;
+        background-color: #f0d800;
+        border-radius: h(14);
+       span{
+           display: inline-block;
+           font-size: h(26);
+           color: #434343;
+           width: h(166);
+        height: h(48);
+        line-height: h(48);
+        text-align: center;
+       }
+    }
+    #game{
+        position: absolute;
+        left: h(463);
+        top: h(20);
+    }
+    #gamerule{
+        display: none;
+        position: fixed;
+        width: h(662);
+        height: h(441);
+        border: 2px solid #ffab01;
+        border-radius: h(20);
+        left: h(335);
+        top: h(153);
+        background-color: #272727;
+        #rule{
+            width: h(563);
+        height: h(339);
+        margin-top: h(35);
+        margin-left: h(38);
+        }
+        #close{
+            width: h(57);
+            height: h(58);
+           position: absolute;
+           top: h(5);
+           right: h(-5);
+        }
+    }
+}

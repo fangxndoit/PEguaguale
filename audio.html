@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<audio loop="loop" autoplay="autoplay" src="asset/Vangelis - Anthem.mp3"></audio>
+		<script type="text/javascript">
+			if(window.plus) {
+				plusReady();
+			} else {
+				document.addEventListener('plusready', plusReady, false);
+			}
+
+			function plusReady() {
+				if(window.plus) {
+					plus.webview.open('index.html','index',{},'fade-in',100);
+				}
+			}
+		</script>
+	</body>
+
+</html>

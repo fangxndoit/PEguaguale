@@ -1,0 +1,81 @@
+@media screen and (orientation: portrait) { html { width: 100%; height: 100%; background-color: white; }
+  body { width: 100%; height: 100%; }
+  #print { position: absolute; background: url(../img/background.png) no-repeat; background-size: cover; }
+  #print #title_icon { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+  #print #guess_bass { position: absolute; top: 5.3333333333vw; left: 51.2vw; }
+  #print #guess_bass img { height: 29.3333333333vw; }
+  #print #guess_outcome { position: absolute; top: 55.0666666667vw; left: 48.2666666667vw; }
+  #print #guess_outcome img { height: 31.4666666667vw; }
+  #print #scraped1 { position: absolute; left: 94vw; top: 12vw; width: 3.2vw; height: 13.7333333333vw; }
+  #print #scraped2 { position: absolute; left: 77.3333333333vw; top: 45.0666666667vw; width: 3.2vw; height: 13.7333333333vw; }
+  #print #your_ball { position: absolute; width: 4.1333333333vw; height: 17.0666666667vw; left: 86vw; bottom: 9.0666666667vw; }
+  #print #my_ball { position: absolute; left: 86vw; bottom: 34.2666666667vw; width: 4.1333333333vw; height: 17.0666666667vw; }
+  #print #ending { position: absolute; top: 12vw; width: 3.2vw; height: 17.3333333333vw; right: 40.8vw; }
+  #print #my_score { position: absolute; top: 12vw; left: 125.3333333333vw; width: 3.2vw; height: 17.3333333333vw; }
+  #print #scraped_area { width: 82.1333333333vw; height: 55.4666666667vw; position: absolute; right: 2.2666666667vw; bottom: 6vw; }
+  #print #ball #one { width: 19.3333333333vw; height: 23.0666666667vw; position: absolute; right: 64.2666666667vw; bottom: 30.8vw; }
+  #print #ball #two { width: 19.3333333333vw; height: 23.0666666667vw; position: absolute; right: 43.7333333333vw; bottom: 30.8vw; }
+  #print #ball #three { width: 19.3333333333vw; height: 23.0666666667vw; position: absolute; right: 23.0666666667vw; bottom: 30.8vw; }
+  #print #ball #four { width: 19.3333333333vw; height: 23.0666666667vw; position: absolute; right: 3.0666666667vw; bottom: 30.8vw; }
+  #print #ball #five { width: 19.3333333333vw; height: 23.0666666667vw; position: absolute; right: 64.2666666667vw; bottom: 6.6666666667vw; }
+  #print #ball #six { width: 19.3333333333vw; height: 23.0666666667vw; position: absolute; right: 43.7333333333vw; bottom: 6.6666666667vw; }
+  #print #ball #seven { width: 19.3333333333vw; height: 23.0666666667vw; position: absolute; right: 23.0666666667vw; bottom: 6.6666666667vw; }
+  #print #ball #eight { width: 19.3333333333vw; height: 23.0666666667vw; position: absolute; right: 3.0666666667vw; bottom: 6.6666666667vw; }
+  #print #ball #nine { width: 20.8vw; height: 20.5333333333vw; right: 54.6666666667vw; position: absolute; top: 10.9333333333vw; }
+  #print #ball #ten { width: 35.0666666667vw; height: 20.2666666667vw; right: 2.2666666667vw; position: absolute; top: 10.9333333333vw; }
+  #account { transform: rotate(90deg); position: absolute; width: 37.3333333333vw; height: 10.9333333333vw; top: 16.9333333333vw; left: 70.6666666667vw; background: url(../img/account.png) no-repeat; }
+  #account span { font-size: 3.0666666667vw; color: #FFFFFF; display: inline-block; height: 10.9333333333vw; line-height: 10.9333333333vw; width: 33.3333333333vw; text-align: end; }
+  #win { position: absolute; width: 100%; height: 100%; background: url(../img/win.png) no-repeat; background-size: cover; top: 0; left: 0; right: 0; bottom: 0; }
+  .canvasclass { position: absolute; width: 18.6666666667vw; height: 22.6666666667vw; }
+  .nineclass { position: absolute; width: 20.8vw; height: 20.9333333333vw; }
+  .tenclass { position: absolute; width: 34.9333333333vw; height: 20vw; } }
+@media screen and (orientation: landscape) { html { width: 100%; height: 100%; background-color: white; }
+  body { position: relative; width: 100%; height: 100%; background-color: white; }
+  #print { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url(../img/background.png) no-repeat; background-size: cover; }
+  #print #title_icon { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+  #print #guess_bass { position: absolute; top: 5.3333333333vh; left: 51.2vh; }
+  #print #guess_bass img { height: 29.3333333333vh; }
+  #print #guess_outcome { position: absolute; top: 43.6vh; left: 48.2666666667vh; }
+  #print #guess_outcome img { height: 31.4666666667vh; }
+  #print #scraped1 { position: absolute; left: 94vh; top: 12vh; width: 3.2vh; height: 13.7333333333vh; }
+  #print #scraped2 { position: absolute; left: 77.3333333333vh; top: 36.8vh; width: 3.2vh; height: 13.7333333333vh; }
+  #print #your_ball { position: absolute; width: 4.1333333333vh; height: 17.0666666667vh; left: 86vh; bottom: 9.0666666667vh; }
+  #print #my_ball { position: absolute; left: 86vh; bottom: 34.2666666667vh; width: 4.1333333333vh; height: 17.0666666667vh; }
+  #print #ending { position: absolute; top: 12vh; width: 3.2vh; height: 17.3333333333vh; right: 40.8vh; }
+  #print #my_score { position: absolute; top: 12vh; left: 125.3333333333vh; width: 3.2vh; height: 17.3333333333vh; }
+  #print #scraped_area { width: 82.1333333333vh; height: 55.4666666667vh; position: absolute; right: 2.2666666667vh; bottom: 6vh; }
+  #print #ball #one { width: 18.6666666667vh; height: 23.0666666667vh; position: absolute; right: 64.2666666667vh; bottom: 30.8vh; }
+  #print #ball #two { width: 19.3333333333vh; height: 23.0666666667vh; position: absolute; right: 43.3333333333vh; bottom: 30.8vh; }
+  #print #ball #three { width: 19.3333333333vh; height: 23.0666666667vh; position: absolute; right: 23.0666666667vh; bottom: 30.8vh; }
+  #print #ball #four { width: 19.3333333333vh; height: 23.0666666667vh; position: absolute; right: 2.8vh; bottom: 30.8vh; }
+  #print #ball #five { width: 19.3333333333vh; height: 23.0666666667vh; position: absolute; right: 63.7333333333vh; bottom: 6.6666666667vh; }
+  #print #ball #six { width: 19.3333333333vh; height: 23.0666666667vh; position: absolute; right: 43.4666666667vh; bottom: 6.6666666667vh; }
+  #print #ball #seven { width: 19.3333333333vh; height: 23.0666666667vh; position: absolute; right: 23.0666666667vh; bottom: 6.6666666667vh; }
+  #print #ball #eight { width: 19.3333333333vh; height: 23.0666666667vh; position: absolute; right: 2.8vh; bottom: 6.6666666667vh; }
+  #print #ball #nine { width: 20.8vh; height: 20.5333333333vh; right: 54.6666666667vh; position: absolute; top: 10.9333333333vh; }
+  #print #ball #ten { width: 35.0666666667vh; height: 20.2666666667vh; right: 2.2666666667vh; position: absolute; top: 10.9333333333vh; }
+  #account { position: relative; width: 37.3333333333vh; height: 10.9333333333vh; top: 1.3333333333vh; left: 1.3333333333vh; background: url(../img/account.png) no-repeat; }
+  #account span { font-size: 3.0666666667vh; color: #FFFFFF; display: inline-block; height: 10.9333333333vh; line-height: 10.9333333333vh; width: 33.3333333333vh; text-align: end; }
+  #win { position: absolute; width: 100%; height: 100%; background: url(../img/win.png) no-repeat; background-size: cover; top: 0; left: 0; right: 0; bottom: 0; }
+  #win #num { width: 69.3333333333vh; height: 14vh; position: absolute; top: 48vh; left: 52.6666666667vh; }
+  #win #num span { display: inline-block; height: 14vh; font-size: 11.7333333333vh; color: #FFFFFF; line-height: 14vh; font-weight: bold; }
+  #win #num span:nth-child(1) { width: 45%; text-align: end; }
+  #win #num span:nth-child(2) { width: 49%; margin-left: 2.6666666667vh; }
+  .canvasclass { position: absolute; width: 18.6666666667vh; height: 22.6666666667vh; }
+  .maskclass { position: absolute; width: 18.6666666667vh; height: 22.6666666667vh; }
+  .nineclass { position: absolute; width: 20.8vh; height: 20.9333333333vh; }
+  .tenclass { position: absolute; width: 34.9333333333vh; height: 20vh; }
+  #btn1 { width: 19.7333333333vh; height: 20vh; position: absolute; bottom: 1.7333333333vh; left: 20vh; }
+  #btn1 img { width: 18.8vh; height: 19.2vh; }
+  #btn2 { display: none; width: 19.7333333333vh; height: 20vh; position: absolute; bottom: 1.7333333333vh; left: 40vh; }
+  #btn2 img { width: 18.8vh; height: 19.2vh; }
+  #btn3 { width: 19.7333333333vh; height: 20vh; position: absolute; bottom: 1.7333333333vh; left: 40vh; }
+  #btn3 img { width: 18.8vh; height: 19.2vh; }
+  #luckynum { position: absolute; top: 60.4vh; left: 28.8vh; width: 22.1333333333vh; height: 6.4vh; border: 1px solid #f0d800; background-color: #f0d800; border-radius: 1.8666666667vh; }
+  #luckynum span { display: inline-block; font-size: 3.4666666667vh; color: #434343; width: 22.1333333333vh; height: 6.4vh; line-height: 6.4vh; text-align: center; }
+  #game { position: absolute; left: 61.7333333333vh; top: 2.6666666667vh; }
+  #gamerule { display: none; position: fixed; width: 88.2666666667vh; height: 58.8vh; border: 2px solid #ffab01; border-radius: 2.6666666667vh; left: 44.6666666667vh; top: 20.4vh; background-color: #272727; }
+  #gamerule #rule { width: 75.0666666667vh; height: 45.2vh; margin-top: 4.6666666667vh; margin-left: 5.0666666667vh; }
+  #gamerule #close { width: 7.6vh; height: 7.7333333333vh; position: absolute; top: 0.6666666667vh; right: -0.6666666667vh; } }
+
+/*# sourceMappingURL=index.css.map */
